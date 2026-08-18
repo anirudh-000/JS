@@ -1,3 +1,4 @@
+/*
 let score = '33abc';
 
 //console.log(typeof score); // string
@@ -27,6 +28,29 @@ let someNumber = 33;
 let stringNumber = String(someNumber);
 console.log(stringNumber); // "33"
 console.log(typeof stringNumber); // string
+
+*/
+
+// Oprations in JS
+
+let value = 3;
+let negValue = -value;
+// console.log(negValue); // -3
+
+//console.log(2+2)
+//console.log(2-2)
+//console.log(2*2)
+//console.log(2/2) // 1
+//console.log(2**3) // 8
+//console.log(2%3) // 2
+
+let gameCounter = 100;
+++gameCounter; // 101
+console.log(gameCounter);
+
+// ++gameCounter;
+// console.log(gameCounter); 
+
 
 
 
