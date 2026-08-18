@@ -1,6 +1,6 @@
 "use strict"; // treats all JS code as modern and prevents accidental errors
 
-// alert("Hello World!"); // create an error on terminal coz of using node JS 
+// alert("Hello World!"); // create an error on terminal coz of using node JS. It's a browser specific function.
 
 let name = "Anirudh";
 let age = 21;
@@ -12,7 +12,7 @@ let state = null;
 // primitive data types
 
 // number => 2 to power of 53 - 1
-// bigint 
+// bigint => used for numbers larger than 2 to power of 53 - 1
 // string => "Anirudh" or 'Anirudh' or `Anirudh`
 // boolean => true or false
 // null => standalone value that represents nothing
@@ -25,6 +25,7 @@ let state = null;
 
 console.log (typeof null); // object
 console.log (typeof undefined); // undefined
+
 
 
 
