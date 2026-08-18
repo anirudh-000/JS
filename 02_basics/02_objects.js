@@ -32,7 +32,29 @@ jsUser.greeting = function() {
     console.log("Hello, " + this.name + "!");
 }
 
-console.log(jsUser.greeting); // [Function: greeting]
-console.log(jsUser.greeting()); // Hello, Anirudh!
+// console.log(jsUser.greeting); // [Function: greeting]
+// console.log(jsUser.greeting()); // Hello, Anirudh!
 
 
+// const tinderUser = new Object() // creating an object using the Object constructor
+
+const tinderUser = {}
+
+tinderUser.id = "123abc"
+tinderUser.name = "Anirudh"
+tinderUser.isLoggedIn = false
+
+
+// console.log(tinderUser); // { id: '123abc', name: 'Anirudh', isLoggedIn: false }
+
+const regularUser = {
+    email: "anirudh@example.com",
+    fullname: {
+        userFullName: {
+            firstName: "Anirudh",
+            lastName: "Kumar"
+        }
+    }
+}
+
+console.log(regularUser.fullname.userFullName.firstName); // Anirudh 
