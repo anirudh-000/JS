@@ -23,8 +23,8 @@ let state = null;
 
 //object => collection of key-value pairs
 
-console.log (typeof null); // object
-console.log (typeof undefined); // undefined
+console.log(typeof null); // object
+console.log(typeof undefined); // undefined
 
 
 
