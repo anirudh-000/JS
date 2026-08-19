@@ -51,5 +51,37 @@ function loginUserMsg (username = "Anirudh") { // setting a default value for th
     return `${username} has logged in.`
 }
 
-console.log(loginUserMsg("Bits")) // calling the function and passing arguments to it
+// console.log(loginUserMsg("Bits")) // calling the function and passing arguments to it
 
+
+function calculateCartPrice (val1, val2, ...num1) {  // rest operator
+    return num1
+}
+
+// console.log(calculateCartPrice(200, 400, 500, 2000))
+
+const user = {
+    username: "Anirudh",
+    price: 199
+}
+
+function handleObject(anyObject) {
+    console.log(`Username is ${anyObject.username} and price is ${anyObject.price}`)
+}
+
+// handleObject(user)
+
+handleObject({
+    username: "Sam",
+    price: 900
+})
+
+
+const myNewArray = [200, 400, 100, 600]
+
+function returnSecondValue(getArray){
+    return getArray[0]
+}
+
+// console.log(returnSecondValue(myNewArray))
+console.log(returnSecondValue([200, 400, 500]))
