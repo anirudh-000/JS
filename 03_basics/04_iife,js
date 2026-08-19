@@ -1,0 +1,19 @@
+// Immediately Invoked Function Expressions (IIFE)
+
+// named IIFE
+
+(function chai() {
+    console.log("DB connected");
+})();                                   // to end execution context ; is required.
+
+// Global scope ke pollution ko tackle krne k liye
+
+// unnamed IIFE
+
+((name) => {
+    console.log(`DB connected ${name}`);
+    
+}) ("Anirudh");
+
+
+
