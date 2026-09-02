@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Requests</title>
+    <style>
+        body {
+            align-items: center;
+            background-color: #f4f4f5;
+            display: flex;
+            font-family: Arial, sans-serif;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .profile-card {
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+            padding: 24px;
+            text-align: center;
+            width: 220px;
+        }
+
+        .profile-avatar {
+            border-radius: 50%;
+            display: block;
+            height: 140px;
+            margin: 0 auto 16px;
+            object-fit: cover;
+            width: 140px;
+        }
+
+        .profile-name {
+            color: #18181b;
+            font-size: 1.25rem;
+            margin: 0;
+        }
+    </style>
+</head>
+<body class="body" >
+</body>
+<script src="https://cdn.jsdelivr.net/npm/eruda"></script>
+<script>
+  eruda.init();
+</script>
+<script>
+
+
+    
+
+    
+
+
+    const requestUrl = 'https://api.github.com/users/anirudh-000'
+    const xhr = new XMLHttpRequest()
+    xhr.open('GET', requestUrl)
+    xhr.onreadystatechange = function(){
+        console.log(xhr.readyState);
+        if(xhr.readyState === 4 ){
+            const data = JSON.parse(this.responseText)
+            const card = document.createElement('article')
+            card.className = 'profile-card'
+
+            const avatar = document.createElement('img')
+            avatar.className = 'profile-avatar'
+            avatar.src = data.avatar_url
+            avatar.alt = `${data.name || data.login}'s avatar`
+
+            const name = document.createElement('h2')
+            name.className = 'profile-name'
+            name.textContent = data.name
+
+            card.append(avatar, name)
+            document.body.appendChild(card)
+        }
+        
+    };
+    xhr.send();
+        
+
+</script>
+</html>
