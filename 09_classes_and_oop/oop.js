@@ -8,6 +8,7 @@ const user = {
         console.log(`Username: ${this.username}`);
         console.log(this);
     }
+    
 }
 
 // console.log(user.username);
@@ -25,7 +26,7 @@ function User(username, loginCount, IsLoggedIn) {
     this.loginCount = loginCount
     this.IsLoggedIn = IsLoggedIn
     this.greetings = function(){
-        console.log(`Haapy Day ${this.username}`)
+        console.log(`Happy Day ${this.username}`)
     }
 
     return this
